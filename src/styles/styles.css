@@ -14,15 +14,12 @@ html {
 
 /* --- CARD --- */
 .card-background {
-	@apply sm:grid-cols-1 bg-white;
-	width: 375px;
-	height: 809px;
+	@apply flex flex-col bg-white w-mobile-width desktop:w-desktop-width desktop:flex-row desktop:rounded-desktop-border;
 }
 
 /* --- CARD HEADER --- */
 .card-header {
-	@apply flex flex-col justify-center items-center bg-gradient-to-b from-gradient1-0 via-gradient1-1 to-gradient1-2 rounded-cardHeader;
-	height: 356px;
+	@apply flex flex-col justify-center items-center bg-gradient-to-b from-gradient1-0 via-gradient1-1 to-gradient1-2 rounded-cardHeader desktop:w-1/2 desktop:rounded-desktop-cardHeader;
 }
 
 .your-result {
@@ -66,6 +63,10 @@ html {
 }
 
 /* --- CARD BODY --- */
+.card-body {
+	@apply desktop:w-1/2;
+}
+
 .summary {
 	@apply text-dark-navy text-body-2 font-bold ml-8 mt-6;
 }
@@ -112,7 +113,7 @@ html {
 
 /* --- BUTTON --- */
 .btn {
-	@apply bg-dark-navy text-white font-bold text-body-1 mt-6 p-4;
+	@apply bg-dark-navy text-white font-bold text-body-1 my-6 p-4;
 	margin-left: 1.875rem;
 	margin-right: 1.875rem;
 	border-radius: 1.875rem;

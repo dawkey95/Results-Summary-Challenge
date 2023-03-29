@@ -5,6 +5,8 @@ module.exports = {
 		extend: {
 			borderRadius: {
 				cardHeader: '0 0 2rem 2rem',
+				'desktop-border': '2rem',
+				'desktop-cardHeader': '2rem',
 			},
 			colors: {
 				yellow: '#FFB21E',
@@ -38,6 +40,14 @@ module.exports = {
 			},
 			fontFamily: {
 				Hanks: ['Hanken Grotesk', 'sans-serif'],
+			},
+			screens: {
+				mobile: '375px',
+				desktop: '1440px',
+			},
+			width: {
+				'mobile-width': '375px',
+				'desktop-width': '736px',
 			},
 		},
 	},
