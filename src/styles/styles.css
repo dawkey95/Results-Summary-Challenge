@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- GLOBAL --- */
+html {
+	@apply font-Hanks;
+}
+
+/* --- LAYOUT --- */
+.main-container {
+	@apply flex flex-col items-center justify-center min-h-screen bg-gray-900;
+}
+
+/* --- CARD --- */
+.card-background {
+	@apply sm:grid-cols-1 bg-white;
+	width: 375px;
+	height: 809px;
+}
+
+/* --- CARD HEADER --- */
+.card-header {
+	@apply flex flex-col justify-center items-center bg-gradient-to-b from-gradient1-0 via-gradient1-1 to-gradient1-2 rounded-cardHeader;
+	height: 356px;
+}
+
+.your-result {
+	@apply text-light-blue text-body-1 text-center mt-6 font-bold;
+}
+
+.circle-container {
+	@apply flex justify-center items-center mt-7;
+}
+
+.circle {
+	@apply flex bg-gradient-to-b from-gradient2-0 via-gradient2-1 to-gradient2-2 rounded-full justify-center items-center;
+	width: 8.75rem;
+	height: 8.75rem;
+}
+
+.score-container {
+	@apply flex flex-col justify-center items-center;
+}
+
+.your-score {
+	@apply text-heading-xl text-white font-extrabold;
+}
+
+.score-out-of {
+	@apply text-body-1 text-light-blue font-bold;
+}
+
+.header-info {
+	@apply flex flex-col justify-center items-center mt-6 mb-10;
+	width: 16.25rem;
+	height: 5.063rem;
+}
+
+.info-title {
+	@apply text-heading-m text-white font-bold;
+}
+
+.info-para {
+	@apply text-body-1 text-light-blue font-medium text-center;
+}
+
+/* --- CARD BODY --- */
+.summary {
+	@apply text-dark-navy text-body-2 font-bold ml-8 mt-6;
+}
+
+.categories {
+	@apply grid grid-cols-1;
+}
+
+.category {
+	@apply flex flex-row justify-between items-center mt-6 ml-8 mr-7 rounded-lg p-3;
+}
+
+.category-name {
+	@apply flex flex-row gap-2;
+}
+
+.category-score {
+	@apply flex flex-row gap-2;
+}
+
+.category-score {
+	@apply text-body-1 text-dark-navy font-bold;
+}
+
+.category-out-100 {
+	@apply text-opacity-50 text-body-1 text-dark-navy font-bold;
+}
+
+.Reaction {
+	@apply bg-red-white text-red font-bold;
+}
+
+.Memory {
+	@apply bg-yellow-white text-yellow font-bold;
+}
+
+.Verbal {
+	@apply bg-green-white text-green font-bold;
+}
+
+.Visual {
+	@apply bg-blue-white text-blue font-bold;
+}
+
+/* --- BUTTON --- */
+.btn {
+	@apply bg-dark-navy text-white font-bold text-body-1 mt-6 p-4;
+	margin-left: 1.875rem;
+	margin-right: 1.875rem;
+	border-radius: 1.875rem;
+}
