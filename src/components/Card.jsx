@@ -19,7 +19,7 @@ const Card = () => {
 						</div>
 					</div>
 					<div class="header-info">
-						<p class="info-title">Great</p>
+						<h1 class="info-title">Great</h1>
 						<p class="info-para">
 							Your performance exceed 65% of the people conducting the test here!
 						</p>
