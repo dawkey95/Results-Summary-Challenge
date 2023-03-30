@@ -27,7 +27,7 @@ const Card = () => {
 				</header>
 
 				<section class="card-body">
-					<p class="summary">Summary</p>
+					<h2 class="summary">Summary</h2>
 					<div class="categories">
 						{items.map((item) => {
 							return (
