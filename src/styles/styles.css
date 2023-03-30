@@ -113,7 +113,7 @@ html {
 
 /* --- BUTTON --- */
 .btn {
-	@apply bg-dark-navy text-white font-bold text-body-1 my-6 p-4;
+	@apply bg-dark-navy text-white font-bold text-body-1 my-6 p-4 hover:bg-gradient-to-b from-gradient1-0 via-gradient1-1 to-gradient1-2;
 	margin-left: 1.875rem;
 	margin-right: 1.875rem;
 	border-radius: 1.875rem;
